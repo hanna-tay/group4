@@ -22,6 +22,9 @@ func _physics_process(delta):
 	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
 	if overlapping_mobs:
 		health -= DAMAGE_RATE * overlapping_mobs.size() * delta
-		%HealthBar.value = health
 		if health <= 0.0:
 			health_depleted.emit()
+
+	# Update health bar + label every frame, regardless of damage
+	%HealthBar.value = health
+	%HealthBarLabel.text = str(roundi(health)) + " / " + str(100)
