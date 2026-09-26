@@ -4,7 +4,6 @@ signal health_depleted
 
 var health = 100.0
 
-
 func _physics_process(delta):
 	const SPEED = 600.0
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -17,7 +16,6 @@ func _physics_process(delta):
 	else:
 		%HappyBoo.play_idle_animation()
 	
-	# Taking damage
 	const DAMAGE_RATE = 6.0
 	var overlapping_mobs = %HurtBox.get_overlapping_bodies()
 	if overlapping_mobs:
@@ -25,6 +23,5 @@ func _physics_process(delta):
 		if health <= 0.0:
 			health_depleted.emit()
 
-	# Update health bar + label every frame, regardless of damage
 	%HealthBar.value = health
 	%HealthBarLabel.text = str(roundi(health)) + " / " + str(100)

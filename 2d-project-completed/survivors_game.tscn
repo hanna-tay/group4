@@ -72,6 +72,20 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="KillCounterLabel" type="Label" parent="CanvasLayer" unique_id=1419727228]
+unique_name_in_owner = true
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -206.5
+offset_right = 206.5
+offset_bottom = 118.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 40
+text = "Be Prepared"
+horizontal_alignment = 1
+
 [node name="PineTree" parent="." unique_id=1536469701 instance=ExtResource("3_6h7ij")]
 position = Vector2(66, 591)
 
