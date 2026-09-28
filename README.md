@@ -10,3 +10,9 @@
 - finding and implementing UI theme (1 hr)
 - added numbers to health bar (0.5 hr)
 - added a kill counter (0.5 hr)
+
+# Sages addtions
+-planning (25 mins)
+-hurt animation (2hrs)
+-smoothing animation (1hr)
+-forgetting to push (way to long)
