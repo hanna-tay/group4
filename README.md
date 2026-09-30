@@ -7,7 +7,7 @@
 # Thomas's Contributions:
 - planning (0.5 hr)
 - pause menu (3 hrs)
-- finding and implementing UI theme (1 hr)
+- finding and implementing UI theme (1 hr) (https://intergenic.itch.io/godot-theme-soft-retro)
 - added numbers to health bar (0.5 hr)
 - added a kill counter (0.5 hr)
 
